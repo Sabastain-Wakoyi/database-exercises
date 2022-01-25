@@ -15,3 +15,18 @@ WHERE genre LIKE '%disco%';
 SELECT name AS 'Albums by ''Whitney Houston'''
 FROM albums
 WHERE artist LIKE '%whitney houston%';
+
+--  DELETE
+DELETE
+FROM albums
+WHERE release_date > 1991;
+
+DELETE
+FROM albums
+WHERE genre LIKE = 'disco';
+
+DELETE
+FROM albums
+WHERE artist LIKE ='Whitney Houston';
+
+SELECT * FROM albums;
