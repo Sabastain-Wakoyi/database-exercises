@@ -28,3 +28,11 @@ VALUES ('Michael Jackson', 'Their Greatest Hits (1971–1975)', 1982, 47.3, 'Cou
        ('The Beatles','1',2000,23.4,'Rock'),
        ('The Beatles','Abbey Road',1969,14.4,'Rock'),
        ('ABBA','Gold: Greatest Hits',1992,23.0,'Pop, disco'),
+       ('Bruce Springsteen','Born in the U.S.A.',1984,19.6,'Heartland rock'),
+       ('Pink Floyd','The Wall',1979,18.7,'Progressive rock'),
+       ('James Horner','Titanic: Music from the Motion Picture',1997,18.1,'Film score'),
+       ('Dire Straits','Brothers in Arms',1985,17.7,'Roots rock, blues rock, soft rock'),
+       ('Nirvana','Nevermind',1991,16.7,'Grunge, alternative rock'),
+       ('Santana','Supernatural',1999,20.5,'Latin rock'),
+       ('Guns N'' Roses','Appetite for Destruction',1987,21.9,'Hard rock'),
+       ('Elton John','Goodbye Yellow Brick Road',1973,8.5,'rock, pop rock, glam rock');
