@@ -36,3 +36,5 @@ VALUES ('Michael Jackson', 'Their Greatest Hits (1971–1975)', 1982, 47.3, 'Cou
        ('Santana','Supernatural',1999,20.5,'Latin rock'),
        ('Guns N'' Roses','Appetite for Destruction',1987,21.9,'Hard rock'),
        ('Elton John','Goodbye Yellow Brick Road',1973,8.5,'rock, pop rock, glam rock');
+
+SELECT * FROM albums;
