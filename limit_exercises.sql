@@ -37,3 +37,20 @@ SELECT DISTINCT emp_no
 FROM salaries
 ORDER BY salary DESC LIMIT 5;
 
+
+
+# Try to think of your results as batches, sets, or pages.
+# The first five results are your first page. The five after that would be your second page, etc.
+# Update the previous query to find the tenth page of results.
+# The employee number results should be:
+# 254466
+# 492164
+# 66793
+# 492164
+
+SELECT DISTINCT emp_no
+FROM salaries
+ORDER BY salary DESC LIMIT 5
+    OFFSET  45;
+
+
