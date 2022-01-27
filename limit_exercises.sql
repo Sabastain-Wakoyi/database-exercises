@@ -53,4 +53,6 @@ FROM salaries
 ORDER BY salary DESC LIMIT 5
     OFFSET  45;
 
-
+# LIMIT and OFFSET can be used to create multiple pages of data.
+# What is the relationship between OFFSET (number of results to skip),
+# LIMIT (number of results per page), and the page number?
