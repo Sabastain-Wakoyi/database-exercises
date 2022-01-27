@@ -53,3 +53,15 @@ FROM employees
 WHERE last_name LIKE '%q%'
   AND last_name NOT LIKE '%qu%'
 GROUP BY last_name;
+
+# Update your query for 'Irena', 'Vidya', or 'Maya'.
+# Use count(*) and GROUP BY to find the number of employees for each gender with those names.
+# Your results should be:
+#     441 M
+#     268 F
+
+SELECT   concat( COUNT(*), ' ',gender) AS ' peeps'
+FROM employees
+WHERE first_name IN ('Irena', 'Vidya', 'maya')
+GROUP BY gender
+ORDER BY count(*) DESC , gender;
