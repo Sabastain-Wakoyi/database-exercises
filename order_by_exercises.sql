@@ -21,8 +21,7 @@ WHERE GENDER = 'M'
     OR first_name = 'Maya')
 ORDER BY first_name;
 
-#0r
-
+#instructor's solution
 SELECT  * FROM employees
 WHERE first_name
 IN ('Irena', 'Vidya', 'Maya')
