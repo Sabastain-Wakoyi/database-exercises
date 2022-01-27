@@ -32,4 +32,26 @@ FROM employees
 WHERE birth_date LIKE '%12-25'
 AND YEAR (hire_date) LIKE '199%';
 
+# Change the query for employees hired in the 90s and
+# born on Christmas such that the first result is
+# the oldest employee who was hired last.
+# It should be Khun Bernini.
+
+SELECT *
+FROM employees
+WHERE DAY (birth_date) = 25
+AND MONTH (birth_date ) = 12
+AND YEAR (hire_date) LIKE '199%'
+  ORDER BY hire_date DESC;
+
+# For your query of employees born on Christmas and hired in the 90s,
+# use datediff() to find how many days they have been working at the company
+# (Hint: You might also need to use now() or curdate()).
+
+SELECT CONCAT(first_name, ' ', last_name), DATEDIFF(CURRENT_DATE(), hire_date)
+FROM employees
+WHERE DAY (birth_date) = 25
+AND MONTH (birth_date ) = 12
+AND YEAR (hire_date) LIKE '199%'
+  ORDER BY hire_date DESC;
 
