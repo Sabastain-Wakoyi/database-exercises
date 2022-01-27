@@ -32,3 +32,14 @@ SELECT last_name, first_name
 FROM employees
 WHERE last_name like 'E%e'
 GROUP BY last_name, first_name;
+
+# Find the unique last names with a 'q' but not 'qu'. Your results should be:
+# Chleq
+# Lindqvist
+# Qiwen
+
+SELECT last_name
+FROM employees
+WHERE last_name like '%q%' and last_name not like '%qu%'
+GROUP BY last_name;
+
