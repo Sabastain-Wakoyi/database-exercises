@@ -2,12 +2,12 @@ USE employees;
 
 # Return 10 employees in a result set named 'full_name'
 # in the format of 'last name, first name' for each employee.
-SELECT CONCAT(emp_no,'_',first_name,'',last_name) AS full_name
+SELECT CONCAT(first_name,'',last_name) AS full_name
 FROM employees
 LIMIT 10;
 
 # Add the date of birth for each employee as 'DOB' to the query.
-SELECT CONCAT(emp_no,'_',first_name,'',last_name) AS full_name, birth_date AS 'DOB'
+SELECT CONCAT(first_name,'',last_name) AS full_name, birth_date AS 'DOB'
 FROM employees
 LIMIT 10;
 
@@ -29,3 +29,7 @@ LIMIT 10;
 #     | 10010 - Piveteau, Duangkaew | 1963-06-01 |
 #     +-----------------------------+------------+
 #     10 rows in set (0.00 sec)
+
+SELECT CONCAT(emp_no,'_',first_name,'',last_name) AS full_name, birth_date AS 'DOB'
+FROM employees
+LIMIT 10;
