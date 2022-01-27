@@ -19,5 +19,17 @@ ORDER BY last_name ASC;
 # or
 SELECT CONCAT(first_name, ' ', last_name)
 FROM employees
-WHERE last_name LIKE 'E%e'
+WHERE last_name LIKE 'E%e';
+
+# Find all employees born on Christmas — 842 rows.
+SELECT CONCAT(first_name, ' ', last_name)
+FROM employees
+WHERE birth_date LIKE '%12-25';
+
+# Find all employees hired in the 90s and born on Christmas — 362 rows.
+SELECT CONCAT(first_name, ' ', last_name)
+FROM employees
+WHERE birth_date LIKE '%12-25'
+AND YEAR (hire_date) LIKE '199%';
+
 
