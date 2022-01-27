@@ -29,6 +29,6 @@ ORDER BY last_name
 
 # NO
 # SELECT birth_date, CONCAT(first_name, ' ', last_name) AS full_name, gender
-                                                           # FROM employees
-                                                                      # WHERE hire_date='1985-01-01'
-        #   AND full_name='Arie Staelin';
+# FROM employees
+# WHERE hire_date='1985-01-01'
+# AND full_name='Arie Staelin';
