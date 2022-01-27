@@ -21,6 +21,13 @@ WHERE GENDER = 'M'
     OR first_name = 'Maya')
 ORDER BY first_name;
 
+#0r
+
+SELECT  * FROM employees
+WHERE first_name
+IN ('Irena', 'Vidya', 'Maya')
+ORDER BY first_name, emp_no DESC;
+
 # Update the query to order by first name and then last name.
 # The first result should now be Irena Acton and
 # the last should be Vidya Zweizig.
