@@ -26,3 +26,18 @@ DESCRIBE salaries;
 DESCRIBE titles;
 
 SELECT * FROM titles;
+
+
+USE codeup_test_db;
+
+SHOW CREATE TABLE albums;
+SHOW TABLES;
+
+ALTER TABLE albums
+    ADD UNIQUE (artist, name);
+
+
+INSERT INTO albums (artist, name)
+VALUES('Pink Floyd', 'The Dark Side of the Moon');
+
+SELECT * FROM albums;
