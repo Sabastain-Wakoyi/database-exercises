@@ -40,3 +40,13 @@ SHOW TABLES;
 
 SELECT * FROM roles;
 SELECT * FROM users;
+
+
+-- Insert 4 new users into the database. One should have a NULL role.
+-- The other three should be authors.
+
+INSERT INTO users (name, email, role_id) VALUES
+                                             ('jevian', 'jevian@example.com', 2),
+                                             ('mbange', 'mbange@example.com', null),
+                                             ('mbovemum', 'mbovemum@example.com', 2),
+                                             ('ando', 'ando@example.com', 2);
