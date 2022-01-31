@@ -31,3 +31,20 @@ FROM employees AS e
 WHERE dm.to_date > NOW() AND e.gender = 'F'
 ORDER BY d.dept_name;
 
+
+# Find the current titles of employees currently working in the Customer Service department.
+
+
+SELECT employees.titles.title, count(employees.titles.title) as Total
+FROM titles
+         JOIN dept_emp
+              ON dept_emp.emp_no = titles.emp_no
+WHERE dept_emp.dept_no = 'd009'
+  AND YEAR(titles.to_date) = '9999'
+GROUP BY employees.titles.title
+ORDER BY count(employees.titles.title) DESC;
+
+
+# Find the current salary of all current managers.
+
+
