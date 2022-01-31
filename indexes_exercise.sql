@@ -3,11 +3,13 @@ USE employees;
 -- USE your employees database
 
 -- DESCRIBE each table and inspect the keys and see which columns have indexes and keys
-HOW INDEXES FROM salaries;
+SHOW INDEXES FROM salaries;
 
 DROP INDEX salary_index ON salaries;
 
 SHOW TABLES;
+
+SHOW INDEXES FROM departments;
 
 DESCRIBE departments;
 
