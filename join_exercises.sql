@@ -47,4 +47,28 @@ ORDER BY count(employees.titles.title) DESC;
 
 # Find the current salary of all current managers.
 
+SELECT d.dept_name AS 'Department Name', CONCAT(e.first_name, ' ', e.last_name) AS Name, s.salary AS Salary
+FROM departments AS d
+         JOIN dept_manager AS dm
+              ON dm.dept_no = d.dept_no
+         JOIN salaries AS s
+              ON s.emp_no = dm.emp_no
+         JOIN employees AS e
+              ON e.emp_no = dm.emp_no
+WHERE dm.to_date > NOW() and s.to_date > NOW()
+order by d.dept_name;
+
+# Bonus Find the names of all current employees, their department name, and their current manager's name
+
+SELECT CONCAT(e.first_name, ' ', e.last_name) AS `Employee Name`, d.dept_name AS `Department Name`
+FROM departments AS d
+         JOIN dept_emp AS de
+              ON de.dept_no = d.dept_no
+         JOIN dept_manager AS dm
+              ON de.emp_no = dm.emp_no
+         JOIN employees AS e
+              ON dm.emp_no = e.emp_no;
+
+
+
 
