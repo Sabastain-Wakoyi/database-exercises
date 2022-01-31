@@ -1,5 +1,4 @@
 
-
 CREATE DATABASE IF NOT EXISTS regulus_db;
 USE regulus_db;
 
