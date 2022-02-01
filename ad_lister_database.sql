@@ -2,7 +2,7 @@ USE ad_lister;
 
 CREATE TABLE IF NOT EXISTS users(
     id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    first_name VARCHAR(500) NOT NULL,
+    first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
     username VARCHAR(75) DEFAULT 'NONE',
     email VARCHAR(80),
@@ -26,7 +26,7 @@ DESCRIBE ads;
 
 CREATE TABLE IF NOT EXISTS categories(
     id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    name VARCHAR(50) NOT NULL,
+    name VARCHAR(100) NOT NULL,
     PRIMARY KEY(id)
     );
 
