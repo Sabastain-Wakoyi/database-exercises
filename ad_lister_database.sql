@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS users(
     first_name VARCHAR(500) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
     username VARCHAR(75) DEFAULT 'NONE',
-    email VARCHAR(100),
+    email VARCHAR(80),
     PRIMARY KEY(id)
 );
 
@@ -14,8 +14,8 @@ DESCRIBE users;
 
 CREATE TABLE IF NOT EXISTS ads(
      id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-     title VARCHAR(100) NOT NULL,
-    description VARCHAR(100) NOT NULL,
+     title VARCHAR(50) NOT NULL,
+    description VARCHAR(50) NOT NULL,
     user_id INT,
     PRIMARY KEY(id),
     UNIQUE(user_id)
@@ -26,7 +26,7 @@ DESCRIBE ads;
 
 CREATE TABLE IF NOT EXISTS categories(
     id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-    name VARCHAR(100) NOT NULL,
+    name VARCHAR(50) NOT NULL,
     PRIMARY KEY(id)
     );
 
