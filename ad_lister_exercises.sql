@@ -27,6 +27,6 @@ JOIN ads on ac.ad_id;
 
 
 -- For a given user, show all the ads they have posted.
-SELECT user_id, a.title
-FROM users AS u
-SHOW  ads;
+SELECT title, description FROM USERS
+JOIN ads ON users.id = ads.user_id
+WHERE users.id = 2;
