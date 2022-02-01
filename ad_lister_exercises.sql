@@ -18,5 +18,12 @@ FROM categories
     ON ads.id = ad_categories.ad_id;
 
 -- For a given category, show all the ads that are in that category.
+SELECT a.id, a.title
+FROM categories AS c
+    JOIN ads_categories AS ac
+        ON c.id = ac.category_id
+    JOIN ads on ac.ad_id;
 
-For a given user, show all the ads they have posted.
+
+
+-- For a given user, show all the ads they have posted.
